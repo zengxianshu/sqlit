@@ -18,6 +18,4 @@ s.source_files  = "Pods/**/*"
 
 s.requires_arc = true
 
-s.dependency 'FMDB'
-
 end
