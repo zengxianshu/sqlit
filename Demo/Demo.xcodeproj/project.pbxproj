@@ -18,6 +18,11 @@
 		812F7B661D47684D000A8B1A /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 812F7B631D47684D000A8B1A /* README.md */; };
 		812F7B671D47684D000A8B1A /* SqlitWithFmdb.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 812F7B641D47684D000A8B1A /* SqlitWithFmdb.podspec */; };
 		812F7B9F1D476C9E000A8B1A /* FMDatabase+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 812F7B921D476C9E000A8B1A /* FMDatabase+Category.m */; };
+		812F7BB11D4773CA000A8B1A /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 812F7BA71D4773CA000A8B1A /* FMDatabase.m */; };
+		812F7BB21D4773CA000A8B1A /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 812F7BA91D4773CA000A8B1A /* FMDatabaseAdditions.m */; };
+		812F7BB31D4773CA000A8B1A /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 812F7BAB1D4773CA000A8B1A /* FMDatabasePool.m */; };
+		812F7BB41D4773CA000A8B1A /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 812F7BAD1D4773CA000A8B1A /* FMDatabaseQueue.m */; };
+		812F7BB51D4773CA000A8B1A /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 812F7BB01D4773CA000A8B1A /* FMResultSet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +42,17 @@
 		812F7B641D47684D000A8B1A /* SqlitWithFmdb.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SqlitWithFmdb.podspec; path = ../SqlitWithFmdb.podspec; sourceTree = "<group>"; };
 		812F7B911D476C9E000A8B1A /* FMDatabase+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FMDatabase+Category.h"; sourceTree = "<group>"; };
 		812F7B921D476C9E000A8B1A /* FMDatabase+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FMDatabase+Category.m"; sourceTree = "<group>"; };
+		812F7BA61D4773CA000A8B1A /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		812F7BA71D4773CA000A8B1A /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		812F7BA81D4773CA000A8B1A /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		812F7BA91D4773CA000A8B1A /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		812F7BAA1D4773CA000A8B1A /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		812F7BAB1D4773CA000A8B1A /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		812F7BAC1D4773CA000A8B1A /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		812F7BAD1D4773CA000A8B1A /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		812F7BAE1D4773CA000A8B1A /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		812F7BAF1D4773CA000A8B1A /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		812F7BB01D4773CA000A8B1A /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +124,7 @@
 		812F7B8F1D476C9E000A8B1A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				812F7BA51D4773CA000A8B1A /* fmdb */,
 				812F7B901D476C9E000A8B1A /* FMDatabase+Category */,
 			);
 			name = Pods;
@@ -121,6 +138,24 @@
 				812F7B921D476C9E000A8B1A /* FMDatabase+Category.m */,
 			);
 			path = "FMDatabase+Category";
+			sourceTree = "<group>";
+		};
+		812F7BA51D4773CA000A8B1A /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				812F7BA61D4773CA000A8B1A /* FMDatabase.h */,
+				812F7BA71D4773CA000A8B1A /* FMDatabase.m */,
+				812F7BA81D4773CA000A8B1A /* FMDatabaseAdditions.h */,
+				812F7BA91D4773CA000A8B1A /* FMDatabaseAdditions.m */,
+				812F7BAA1D4773CA000A8B1A /* FMDatabasePool.h */,
+				812F7BAB1D4773CA000A8B1A /* FMDatabasePool.m */,
+				812F7BAC1D4773CA000A8B1A /* FMDatabaseQueue.h */,
+				812F7BAD1D4773CA000A8B1A /* FMDatabaseQueue.m */,
+				812F7BAE1D4773CA000A8B1A /* FMDB.h */,
+				812F7BAF1D4773CA000A8B1A /* FMResultSet.h */,
+				812F7BB01D4773CA000A8B1A /* FMResultSet.m */,
+			);
+			path = fmdb;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,8 +233,13 @@
 				812F7B9F1D476C9E000A8B1A /* FMDatabase+Category.m in Sources */,
 				812F7B2F1D4761EB000A8B1A /* ViewController.m in Sources */,
 				812F7B661D47684D000A8B1A /* README.md in Sources */,
+				812F7BB11D4773CA000A8B1A /* FMDatabase.m in Sources */,
+				812F7BB51D4773CA000A8B1A /* FMResultSet.m in Sources */,
 				812F7B2C1D4761EB000A8B1A /* AppDelegate.m in Sources */,
+				812F7BB31D4773CA000A8B1A /* FMDatabasePool.m in Sources */,
+				812F7BB21D4773CA000A8B1A /* FMDatabaseAdditions.m in Sources */,
 				812F7B291D4761EB000A8B1A /* main.m in Sources */,
+				812F7BB41D4773CA000A8B1A /* FMDatabaseQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
