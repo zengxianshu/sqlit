@@ -1,0 +1,10 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+platform :ios, '7.0'
+
+abstract_target 'OnionAll' do
+
+#pod 'PodTestLibrary', :path => '~/Users/Ink/Desktop/sqlit/'      #指定路径
+pod 'PodTestLibrary', :podspec => '~/Users/Ink/Desktop/sqlit/SqlitWithFmdb.podspec'  #指定podspec文件
+
+end
