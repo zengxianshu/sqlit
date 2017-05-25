@@ -6,6 +6,9 @@
 //  Copyright (c) 2015年  All rights reserved.
 //
 
+//insert or replace：如果不存在就插入，存在就更新
+//insert or ignore：如果不存在就插入，存在就忽略
+
 #define KEY_VALUE(KEY,VALUE) [NSString stringWithFormat:@"%@ = '%@'",KEY,VALUE]
 
 #define WHERE_KEY_VALUE(KEY,VALUE) KEY_VALUE(KEY,VALUE)

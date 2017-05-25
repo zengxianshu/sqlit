@@ -190,4 +190,6 @@
     
     return flag;
 }
+
+// 判读表的某列是否存在 if (![db columnExists:@"需要增加的字段" inTableWithName:@"表名"]){}
 @end
